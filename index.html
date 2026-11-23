@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeZ_A | Game Assets & Development</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 8vw, 75px);
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #a855f7;
+}
+
+.hero p {
+    color: #aaa;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #9333ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #7e22ce;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.section-title span {
+    color: #a855f7;
+}
+
+.about {
+    background: #0c0c0c;
+    color: #bbb;
+}
+
+.about p {
+    max-width: 700px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #111;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 30px;
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    border-color: #9333ea;
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #aaa;
+    margin-bottom: 18px;
+}
+
+.project-card a {
+    color: #c084fc;
+    text-decoration: none;
+}
+
+.contact {
+    background: #0c0c0c;
+    text-align: center;
+}
+
+.contact p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #c084fc;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    border-top: 1px solid #222;
+    font-size: 13px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BeZ_A</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero">
+    <h1>Welcome to <span>BeZ_A</span></h1>
+    <p>
+        Independent game development and creative assets.
+        Building resources for developers around the world.
+    </p>
+    <a href="#projects" class="button">Explore Projects</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About <span>BeZ_A</span></h2>
+    <p>
+        BeZ_A is an independent game development brand
+        focused on creating game assets, tools and
+        creative resources for developers.
+        My goal is to provide affordable and useful
+        resources that help bring creative ideas to life.
+    </p>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My <span>Work</span></h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Game Assets</h3>
+            <p>
+                Discover assets and resources
+                created for game developers.
+            </p>
+            <a href="YOUR_ITCH_IO_URL" target="_blank">
+                View on itch.io →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Game Development</h3>
+            <p>
+                Explore my independent game
+                development projects.
+            </p>
+            <a href="YOUR_ITCH_IO_URL" target="_blank">
+                Explore Games →
+            </a>
+        </div>
+
+        <div class="project-card">
+            <h3>Unity Asset Store</h3>
+            <p>
+                More development resources
+                coming soon.
+            </p>
+            <span style="color:#888;">Coming Soon</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Get in <span>Touch</span></h2>
+    <p>
+        Have questions or business inquiries?
+        Feel free to contact me.
+    </p>
+    <a href="mailto:YOUR_EMAIL">Contact BeZ_A</a>
+</section>
+</main>
+
+<footer>
+    © 2026 BeZ_A. All rights reserved.
+</footer>
+
+</body>
+</html>
